@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://example.com/grant-interview-simulator/sitemap.xml
+Sitemap: https://grant.mockbase.app/sitemap.xml
