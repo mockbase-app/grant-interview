@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grant Interview Simulator | Funding Interview Practice Software</title>
+  <meta name="description" content="Grant interview practice simulator for applicants preparing funding, proposal, and panel interviews. Practice impact, methodology, budget, and evaluation answers with structured prompts and timed review.">
+  <link rel="canonical" href="https://example.com/grant-interview-simulator/">
+
+  <meta property="og:title" content="Grant Interview Simulator">
+  <meta property="og:description" content="Practice grant interview questions with structured prompts, category coverage, and focused funding interview preparation.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://example.com/grant-interview-simulator/">
+  <meta property="og:image" content="https://example.com/grant-interview-simulator/preview-assets/practice-session.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Grant Interview Simulator">
+  <meta name="twitter:description" content="Grant and funding interview practice with structured prompts, category review, and repeatable mock preparation.">
+  <meta name="twitter:image" content="https://example.com/grant-interview-simulator/preview-assets/practice-session.png">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="icon" href="favicon_io/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+  <link rel="manifest" href="favicon_io/site.webmanifest">
+  <meta name="theme-color" content="#1e40af">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Grant Interview Simulator",
+    "applicationCategory": "EducationalApplication",
+    "operatingSystem": "Web, macOS, Windows",
+    "description": "Grant interview practice simulator for applicants preparing funding, proposal, and panel interviews. Practice impact, methodology, budget, and evaluation answers with structured prompts and timed review.",
+    "url": "https://example.com/grant-interview-simulator/",
+    "offers": {
+      "@type": "Offer",
+      "price": "0.00",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+</head>
+<body data-page="practice">
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="Grant Interview Simulator">
+      <span class="brand-mark">GI</span>
+      <span>
+        <strong>Grant Interview Simulator</strong>
+        <small>10 question free web practice</small>
+      </span>
+    </a>
+
+    <nav class="top-actions" aria-label="Primary navigation">
+      <a class="button button-ghost" href="#practice">Practice</a>
+      <a class="button button-warm" href="preview.html">Preview Full Version</a>
+    </nav>
+  </header>
+
+  <main class="page-shell">
+    <section id="practice" class="practice-layout">
+      <section class="practice-card" aria-label="Current practice question">
+        <div class="session-bar">
+          <div class="metric progress-metric">
+            <span>Progress</span>
+            <strong id="progressText">1 / 10</strong>
+            <div class="progress-track" aria-hidden="true">
+              <div id="progressFill" class="progress-fill"></div>
+            </div>
+          </div>
+
+          <div class="metric">
+            <span>Question Time</span>
+            <strong id="timerText">00:00</strong>
+          </div>
+
+          <div class="metric">
+            <span>Marked</span>
+            <strong id="markedCount">0</strong>
+          </div>
+        </div>
+
+        <article class="question-panel">
+          <div class="question-meta">
+            <span id="questionNumber">Question 1</span>
+            <span id="questionId">GI001</span>
+          </div>
+
+          <h1 id="questionText">Give an overview of your proposed project and its main objectives.</h1>
+
+          <p id="questionNote" class="question-note" hidden></p>
+
+          <div id="tagList" class="tag-list" aria-label="Question categories"></div>
+
+          <div class="answer-angle">
+            <h2>Answer angle</h2>
+            <ul id="answerAngleList"></ul>
+          </div>
+
+          <div class="question-footer">
+            <span id="remainingText">9 remaining</span>
+            <span>No login. Local practice only.</span>
+          </div>
+        </article>
+
+        <div class="practice-controls">
+          <button id="reviewButton" class="button button-outline" type="button">Mark for Review</button>
+          <button id="resetButton" class="button button-secondary" type="button">Reset Session</button>
+          <button id="nextButton" class="button button-primary" type="button">Next Question</button>
+        </div>
+      </section>
+
+      <aside class="side-stack" aria-label="Practice details">
+        <section class="side-card">
+          <h2>Category Distribution</h2>
+          <div id="distributionList" class="distribution-list"></div>
+        </section>
+
+        <section class="side-card">
+          <h2>Marked Questions</h2>
+          <div id="markedList" class="marked-list">No questions marked yet.</div>
+        </section>
+
+        <section class="side-card full-card">
+          <p class="eyebrow">Full version</p>
+          <h2>Need the full 120 question toolkit?</h2>
+          <p>Preview the full simulator with all 120 prompts, broader category coverage, structured mock practice, and searchable review workflows.</p>
+          <a class="button button-warm full-width" href="preview.html">Preview Full Version</a>
+        </section>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="footer-note">This is an independent interview preparation tool. It does not guarantee funding decisions, grant awards, endorsements, or panel outcomes.</footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
